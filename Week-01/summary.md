@@ -1,4 +1,4 @@
-# Week 01 Progress (02 March – 06 March 2026)
+# Week 01 Progress (27 February – 06 March 2026)
 
 This week marks the beginning of my Python learning journey.
 
