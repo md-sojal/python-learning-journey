@@ -8,7 +8,6 @@ I update this repository every **7 days** with:
 - What I learned
 - Programs I built
 - Challenges I faced
-- My progress in Harvard CS50 Python
 
 Goal:  
 Become a skilled Python developer capable of building automation tools and software.
