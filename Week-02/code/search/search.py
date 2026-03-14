@@ -1,23 +1,3 @@
-"""
-import requests
-
-def main():
-    print("Search the Art Institute of Chicago")
-    artist = input("Arist: ")
-    try:
-        responce = requests.get(
-            "https://api.artic.edu/api/v1/artworks/search",
-            {"q": artist}
-            )
-        responce.raise_for_status()
-    except requests.HTTPError:
-        print("Couldn't complete requests")
-    content = responce.json()
-    for artwork in content["data"]:
-        print(f"* {artwork ['title']}")
-
-main()
-"""
 from museum.artists import get_artists
 from museum.artwork import get_artworks
 def main():
