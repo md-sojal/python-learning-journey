@@ -3,7 +3,12 @@ from museum.artwork import get_artworks
 def main():
     print("If you want to search by Artist input 1")
     print("If you want to search by Artwork input 2")
-    search_type = int(input("What do you want to search by: "))
+    try:
+        search_type = int(input("What do you want to search by: "))
+    except ValueError:
+        print("Please enter a number")
+        return
+
     if search_type == 1:
         artist = input("Artist:")
         artists = get_artists(query= artist, limit=3)
